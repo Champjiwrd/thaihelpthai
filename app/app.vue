@@ -220,6 +220,22 @@
 </template>
 
 <script setup lang="ts">
+useSeoMeta({
+  title: 'คำนวณไทยช่วยไทยพลัส — รู้ก่อนจ่าย รัฐออกให้เท่าไหร่?',
+  description: 'คำนวณราคาอาหารและสินค้าจากโครงการไทยช่วยไทยพลัส รัฐบาลออกให้ 60% สูงสุด 200 บาท/วัน รู้ทันทีว่าต้องจ่ายเองเท่าไหร่ผ่านแอปเป๋าตัง',
+  ogTitle: 'คำนวณไทยช่วยไทยพลัส — รู้ก่อนจ่าย',
+  ogDescription: 'รัฐออกให้ 60% (สูงสุด 200 ฿/วัน) คุณออกเอง 40% กรอกราคาแล้วรู้เลยว่าต้องสแกนจ่ายในเป๋าตังเท่าไหร่',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'คำนวณไทยช่วยไทยพลัส',
+  twitterDescription: 'รัฐออกให้ 60% สูงสุด 200 ฿/วัน กรอกราคาแล้วรู้เลยว่าต้องจ่ายเองเท่าไหร่',
+})
+
+useHead({
+  htmlAttrs: { lang: 'th' },
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+})
+
 const GOV_CAP = 200
 const GOV_RATIO = 0.6
 
